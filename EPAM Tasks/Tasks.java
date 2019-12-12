@@ -183,8 +183,8 @@ public class Tasks {
 //        //Task 11
 //        printYesOrNo("abcdefg");
 
-        //Task 12
-        printElementIfDegreeOf2(arrayInt);
+//        //Task 12
+//        printElementIfDegreeOf2(arrayInt);
 
     }
 }
