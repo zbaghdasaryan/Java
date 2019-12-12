@@ -73,7 +73,7 @@ public class Human {
         else System.out.println(human.surname);
     }
 
-    //3․ Գրել մեթոդ, որը ստանում է պարամետր Human-նների զանգված և տպել աճման կարգով ըստ ծննդյան տարեթվի։
+    //5․ Գրել մեթոդ, որը ստանում է պարամետր Human-նների զանգված և տպել աճման կարգով ըստ ծննդյան տարեթվի։
 
     public static void humanBubbleSort(Human[] human) {
         for (int i = human.length - 1; i > 0; i--) {
