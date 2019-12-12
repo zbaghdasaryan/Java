@@ -1,4 +1,7 @@
-public class Tasks {
+package vc.lesson.tasks;
+
+public class ArrayTasks {
+
 
     //1. Հայտարարել զանգված եւ տպել այն։
 
@@ -145,14 +148,41 @@ public class Tasks {
         }
     }
 
+    //13.Գրել մեթոդ, որը ստանում է int-երի զանգված և վերադարձնել անենամեծ արժեքով էլեմենտը։
+    public static int printMaxValue(int[] array) {
 
-    public static void main(String[] args) {
-        int arrayInt[] = {0, 1, 2, 3, 4, 5, 8, 25, 75, 101};
-        double arrayDouble[] = {2.54, 58.7, 11.2, 2.1, 0.1, 101.2, 200, 24.56};
-        float arrayFloat[] = {2.54f, 58.7f, 11.2f, 2.1f, 0.1f, 101.2f, -200f, 24.56f};
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1]) {
+                int temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
+        }
+        return array[array.length - 1];
+    }
+
+    //14.Գրել մեթոդ, որը ստանում է float-երի զանգված և վերադարձնել անենափոքր արժեքով էլեմենտի ինդեքսը։
+    public static int printMinElementIndex(float[] array) {
+        int index = 0;
+        float temp = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < temp) {
+                temp = array[i];
+                index = i;
+            }
+        }
+        return index;
+    }
+
+//    public static void main(String[] args) {
+//        int arrayInt[] = {0, 1, 2, 3, 4, 5, 8, 25, 75, 101};
+//        double arrayDouble[] = {2.54, 58.7, 11.2, 2.1, 0.1, 101.2, 200, 24.56};
+//        float arrayFloat[] = {2.54f, 58.7f, 11.2f, 2.1f, 0.1f, 101.2f, -200f, 24.56f};
+//
+//
 //        //Task 1
 //        printArray(arrayInt);
-//
+
 //        //Task 2
 //        fillZeroValue(100);
 //
@@ -185,6 +215,5 @@ public class Tasks {
 
 //        //Task 12
 //        printElementIfDegreeOf2(arrayInt);
-
-    }
+//   }
 }
