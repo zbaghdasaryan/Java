@@ -5,7 +5,7 @@ public class DoWhile {
         do {
             counter++;
             System.out.println("Counter " + counter);
-        } while (counter < 3);
+        } while (counter < 5);
 
         System.out.println("Product "+ counter + " iteration");
     }
